@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 body {
-    background-color: #161A23;
-    /* margin: 1rem; */
-    /* overflow: hidden; */
-    /* height: 100vh; */
+    background-color: #161A23  !important;
+    padding: 0.8rem;
+    overflow: hidden;
+    height: 100vh;
 }
 
 @layer utilities {
