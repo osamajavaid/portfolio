@@ -3,7 +3,8 @@ import React from 'react'
 
 const contact = () => {
     const router = useRouter()
-    console.log(router)
+    // const currentPath =
+    // console.log(router.pathname)
     return (
         <div>contact</div>
     )
