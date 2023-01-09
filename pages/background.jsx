@@ -1,6 +1,4 @@
-import React from 'react'
-
-const background = () => {
+function background() {
     return (
         <div>background</div>
     )

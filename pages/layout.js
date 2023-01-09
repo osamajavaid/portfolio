@@ -12,7 +12,7 @@ export default function Layout({ children }) {
             <div className="w-64 ">
                 <Intro />
             </div>
-            <div className="w-9/12 bg-[#20202A] shadow-2xl">
+            <div className="w-9/12 shadow-2xl">
                 {children}
             </div>
             <div className="w-20 relative bg-[#20202A] shadow-2xl">

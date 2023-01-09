@@ -1,4 +1,3 @@
-// import osama from 'images/osama.jpg'
 import Image from 'next/image'
 import { FaDownload, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import Contact from './Contact'
