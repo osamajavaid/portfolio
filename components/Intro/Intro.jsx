@@ -10,7 +10,7 @@ import Tools from './Tools'
 const Intro = () => {
 
     return (
-        <div className="h-full overflow-hidden relative bg-[#20202A] shadow-2xl flex flex-col">
+        <div className="w-64 h-full overflow-hidden relative bg-[#20202A] shadow-2xl z-[300] flex flex-col">
             {/* fixed at top */}
             <div className="headerr z-50 absolute bg-gray-800 bg-opacity-90 backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
                 <img className='w-20 h-20 rounded-full' src='images/osama.jpg' alt="" />

@@ -9,13 +9,24 @@ export default function Layout({ children }) {
     return (
 
         <div className="h-[96vh] flex justify-between gap-x-3 select-none">
-            <div className="w-64 ">
+            <div className="hidden lg:block">
                 <Intro />
             </div>
-            <div className="w-9/12 shadow-2xl">
+            <div className="w-full lg:w-9/12 shadow-2xl">
+                <div className="bg-red-600  w-full h-10 flex items-center justify-between px-2 lg:hidden">
+                    <div className="" onClick={e => setOpen(!open)}>
+                        <CgMenuRightAlt />
+                    </div>
+                    {/* <div className='reative'> */}
+                    {/* </div> */}
+                    <div className="">
+                        <CgMenuRightAlt />
+                    </div>
+                </div>
+                {open && <Intro />}
                 {children}
             </div>
-            <div className="w-20 relative bg-[#20202A] shadow-2xl">
+            <div className="hidden lg:block w-20 relative bg-[#20202A] shadow-2xl">
                 <div onClick={e => setOpen(!open)} className="bg-gray-800 flex items-center h-16 justify-center text-2xl ">
                     <CgMenuRightAlt />
                 </div>
