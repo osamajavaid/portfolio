@@ -15,8 +15,8 @@ const Intro = () => {
             <div className="headerr z-50 absolute bg-gray-800 bg-opacity-90 backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
                 <img className='w-20 h-20 rounded-full' src='images/osama.jpg' alt="" />
                 <div className="flex flex-col items-center justify-center">
-                    <span className='text-red-500 text-sm font-bold break-normal'>Osama Javaid </span>
-                    <span className='text-xs text-gray-600 text-center'>MERN Stack Develoer | UI/UX Designer <br /> Tech Blogger </span>
+                    <span className='text-red text-sm font-bold break-normal'>Osama Javaid </span>
+                    <span className='text-xs text-red-600 text-center'>MERN Stack Develoer | UI/UX Designer <br /> Tech Blogger </span>
                 </div>
             </div>
 
