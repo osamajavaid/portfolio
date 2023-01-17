@@ -9,7 +9,7 @@ import NavItem from './NavItem'
 
 const Nav = ({ setOpen }) => {
     return (
-        <div className="absolute flex flex-col justify-center inset-y-0 right-0 w-64 h-full bg-[#20202A] shadow-2xl">
+        <div className="absolute z-[100] flex flex-col justify-center inset-y-0 right-0 w-64 h-full bg-[#20202A] shadow-2xl">
             <div onClick={e => setOpen(false)} className="flex absolute top-0 w-full items-center justify-center text-2xl h-16 bg-gray-800">
                 <ImCross />
             </div>

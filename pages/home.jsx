@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect';
 
 const home = () => {
     return (
-        <div className="PARENT">
+        <div className="PARENT -z-10">
             <div
                 className="relative backdrop-blur-sm w-full h-72 bg-fixed z-10"
                 style={{

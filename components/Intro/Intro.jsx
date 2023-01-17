@@ -10,13 +10,13 @@ import Tools from './Tools'
 const Intro = () => {
 
     return (
-        <div className="w-64 h-full overflow-hidden relative bg-[#20202A] shadow-2xl z-[300] flex flex-col">
+        <>
             {/* fixed at top */}
             <div className="headerr z-50 absolute bg-gray-800 bg-opacity-90 backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
                 <img className='w-20 h-20 rounded-full' src='images/osama.jpg' alt="" />
                 <div className="flex flex-col items-center justify-center">
-                    <span className='text-red text-sm font-bold break-normal'>Osama Javaid </span>
-                    <span className='text-xs text-red-600 text-center'>MERN Stack Develoer | UI/UX Designer <br /> Tech Blogger </span>
+                    <span className='text-gray-600 text-sm font-bold break-normal'>Osama Javaid </span>
+                    <span className='text-xs text-gray-600 text-center'>MERN Stack Develoer | UI/UX Designer <br /> Tech Blogger </span>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const Intro = () => {
                 <div className=""><FaLinkedin /></div>
             </div>
 
-        </div>
+        </>
     )
 }
 
