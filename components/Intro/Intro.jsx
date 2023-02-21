@@ -21,7 +21,7 @@ const Intro = () => {
             </div>
 
             {/* middle components */}
-            <div className="beech flex flex-col overflow-y-auto pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
+            <div className="beech flex flex-col overflow-y-scroll pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
                 <Location />
                 <Languages />
                 <Tools />
