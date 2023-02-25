@@ -1,10 +1,14 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import React from 'react'
 
 
-const NavItem = ({ NavIcon, NavText, NavRoute }) => {
+const NavItem = ({ NavIcon, NavText, NavRoute, setOpen }) => {
+    const router = useRouter();
+    const className = router.asPath === `${NavRoute}` ? "bg-yellow-500 text-gray-900" : '';
+
     return (
-        <Link href={NavRoute} className="flex items-center px-2 hover:bg-yellow-500 text-gray-400 hover:text-gray-900 hover:font-bold py-1 font-bold space-x-4 text-lg">
+        <Link onClick={(e) => setOpen(false)} href={NavRoute} className={`${className} flex items-center px-2 hover:bg-yellow-500 text-gray-400 hover:text-gray-900 hover:font-bold py-1 font-bold space-x-4 text-lg`}>
             {NavIcon}
             <span>{NavText}</span>
         </Link>

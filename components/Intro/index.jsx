@@ -5,6 +5,7 @@ import Download from './Download'
 import Languages from './Languages'
 import Location from './location'
 import Tools from './Tools'
+import Skills from './Skills'
 
 
 const Intro = () => {
@@ -24,6 +25,7 @@ const Intro = () => {
             <div className="beech flex flex-col overflow-y-scroll pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
                 <Location />
                 <Languages />
+                <Skills />
                 <Tools />
                 <Contact />
                 <Download icon={<FaDownload />} />

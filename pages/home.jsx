@@ -20,9 +20,9 @@ const home = () => {
                                     <h1 className="text-5xl text-white font-bold">Hello, Check This Out!</h1>
                                 </div>
                                 <div className="">
-                                    <div class=" py-4 pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
-                                        <span> &lt;<span class="text-yellow-600 font-bold">code</span>
-                                            &gt; <span className="text-white font-bold"> I am  <span class="inline-block">
+                                    <div className=" py-4 pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
+                                        <span> &lt;<span className="text-yellow-600 font-bold">code</span>
+                                            &gt; <span className="text-white font-bold"> I am  <span className="inline-block">
                                                 <Typewriter
                                                     options={{
                                                         strings:
@@ -33,7 +33,7 @@ const home = () => {
                                                     }}
                                                 />
                                             </span>
-                                            </span> &lt;/<span class="text-yellow-600 font-bold">code</span>&gt; </span>
+                                            </span> &lt;/<span className="text-yellow-600 font-bold">code</span>&gt; </span>
                                     </div>
                                 </div>
                                 <button className="py-2 px-10 bg-yellow-500 text-black">Explore</button>

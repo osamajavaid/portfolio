@@ -7,17 +7,17 @@ import { HiIdentification } from 'react-icons/hi'
 import NavItem from './NavItem'
 
 
-const Nav = ({ setOpen }) => {
+const Nav = ({ setOpen, menuRef }) => {
     return (
-        <div className="absolute z-[100] flex flex-col justify-center inset-y-0 right-0 w-64 h-full bg-[#20202A] shadow-2xl">
+        <div ref={menuRef} className="absolute z-[100] flex flex-col justify-center inset-y-0 right-0 w-64 h-full bg-[#20202A] shadow-2xl">
             <div onClick={e => setOpen(false)} className="flex absolute top-0 w-full items-center justify-center text-2xl h-16 bg-gray-800">
                 <ImCross />
             </div>
             <div className="flex flex-col gap-y-2 px-6 w-full">
-                <NavItem NavRoute={'/home'} NavIcon={<GoHome />} NavText={'Home'} />
-                <NavItem NavRoute={'/contact'} NavIcon={<FaRegHandshake />} NavText={'Contact'} />
-                <NavItem NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
-                <NavItem NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
+                <NavItem setOpen={setOpen} NavRoute={'/home'} NavIcon={<GoHome />} NavText={'Home'} />
+                <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaRegHandshake />} NavText={'Contact'} />
+                <NavItem setOpen={setOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
+                <NavItem setOpen={setOpen} NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
             </div>
         </div>
     )
