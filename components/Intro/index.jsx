@@ -22,7 +22,7 @@ const Intro = () => {
             </div>
 
             {/* middle components */}
-            <div className="beech flex flex-col overflow-y-scroll pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
+            <div className="beech z-20 flex flex-col overflow-y-scroll pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
                 <Location />
                 <Languages />
                 <Skills />
@@ -32,7 +32,7 @@ const Intro = () => {
             </div>
 
             {/* fixed at bottom */}
-            <div className="footerr absolute flex justify-center space-x-6 text-xl items-center bottom-0 h-10 w-full bg-gray-800 text-white">
+            <div className="footerr absolute flex justify-center space-x-6 text-xl items-center bottom-0 z-50 h-10 w-full bg-gray-800 text-white">
                 <div className=""><FaGithub /></div>
                 <div className=""><FaTwitter /></div>
                 <div className=""><FaFacebook /></div>

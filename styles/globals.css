@@ -4,7 +4,7 @@
 
 body {
     background-color: #161A23  !important;
-    padding: 0.8rem;
+    /* padding: 0.8rem; */
     overflow: hidden;
     height: 100vh;
 }
