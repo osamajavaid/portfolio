@@ -1,15 +1,14 @@
 import { ImCross } from 'react-icons/im'
 import { FiAward } from 'react-icons/fi'
 import { FaRegHandshake } from 'react-icons/fa'
-import { IoIosRadioButtonOff } from 'react-icons/io'
 import { GoHome } from 'react-icons/go'
 import { HiIdentification } from 'react-icons/hi'
 import NavItem from './NavItem'
 
 
-const Nav = ({ setOpen, menuRef }) => {
+const Nav = ({ setOpen }) => {
     return (
-        <div ref={menuRef} className="absolute z-[100] flex flex-col justify-center lg:inset-y-0 -top-10 -right-4 lg:right-0 w-64 h-screen lg:h-full bg-[#20202A] shadow-2xl">
+        <div className="absolute z-[100] flex flex-col justify-center lg:inset-y-0 -top-10 -right-0 lg:right-0 w-64 h-screen lg:h-full bg-[#20202A] shadow-2xl">
             <div onClick={e => setOpen(false)} className="flex absolute top-0 w-full items-center justify-center text-2xl h-16 bg-gray-800">
                 <ImCross />
             </div>

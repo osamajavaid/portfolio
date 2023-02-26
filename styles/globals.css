@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 body {
+    /* transition: all; */
     background-color: #161A23  !important;
     /* padding: 0.8rem; */
+    /* transition: width 5s ease-in .2s; */
     overflow: hidden;
     height: 100vh;
 }
@@ -21,5 +23,28 @@ body {
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;  /* Firefox */
       }
+
+            /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 4px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: yellow; 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: yellow; 
+        }
     }
   }
