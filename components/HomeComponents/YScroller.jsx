@@ -3,10 +3,10 @@ import { FaStar } from 'react-icons/fa'
 const YScroller = () => {
     return (
         <>
-            <div class="px-2 md:px-8 py-4 text-lg font-bold text-white">Clients Reviews</div>
+            <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">Clients Reviews</div>
             <div className="overflow-auto w-full grid  justify-items-center grid-flow-col gap-4 px-2 md:px-8">
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -25,7 +25,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -35,7 +35,7 @@ const YScroller = () => {
                 </div>
 
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -54,7 +54,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -63,7 +63,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -82,7 +82,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -91,7 +91,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -110,7 +110,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -119,7 +119,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -138,7 +138,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -147,7 +147,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -166,7 +166,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -175,7 +175,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -194,7 +194,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -203,7 +203,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -222,7 +222,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -231,7 +231,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -250,7 +250,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
@@ -259,7 +259,7 @@ const YScroller = () => {
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
+                <div className="flex flex-col justify-between bg-[#20202a] w-80 md:w-96 h-full  p-4 md:p-8">
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm text-white font-bold">Mustafash</span>
@@ -278,7 +278,7 @@ const YScroller = () => {
                         knowledge of the work he does.
                         I look forward to our next collaboration.
                     </div>
-                    <div class="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
+                    <div className="flex gap-2 items-center justify-center bg-black/25 w-6/12 md:w-5/12 text-xs text-yellow-500 rounded-full p-2 mt-4 ">
                         <FaStar />
                         <FaStar />
                         <FaStar />
