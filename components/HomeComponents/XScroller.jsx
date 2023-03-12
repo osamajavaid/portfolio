@@ -1,6 +1,6 @@
 import { MdLocationOn } from 'react-icons/md'
 import { FaStar } from 'react-icons/fa'
-const YScroller = () => {
+const XScroller = () => {
     return (
         <>
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">Clients Reviews</div>
@@ -293,4 +293,4 @@ const YScroller = () => {
     )
 }
 
-export default YScroller
+export default XScroller

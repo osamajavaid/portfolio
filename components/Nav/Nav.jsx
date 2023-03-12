@@ -13,7 +13,7 @@ const Nav = ({ setOpen }) => {
                 <ImCross />
             </div>
             <div className="flex flex-col gap-y-2 px-6 w-full">
-                <NavItem setOpen={setOpen} NavRoute={'/home'} NavIcon={<GoHome />} NavText={'Home'} />
+                <NavItem setOpen={setOpen} NavRoute={'/'} NavIcon={<GoHome />} NavText={'Home'} />
                 <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaRegHandshake />} NavText={'Contact'} />
                 <NavItem setOpen={setOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
                 <NavItem setOpen={setOpen} NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />

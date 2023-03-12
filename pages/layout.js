@@ -33,7 +33,7 @@ export default function Layout({ children }) {
                     {intro && <div onClick={(e) => setIntro(false)} className='fixed top-0 left-0  w-full h-full bg-black/5 z-40 backdrop-blur-sm'></div>}
 
                     {/* middle of screen */}
-                    <div className="w-full lg:w-9/12 shadow-2xl relative overflow-auto no-scrollbar">
+                    <div className="w-full h-auto lg:w-9/12 shadow-2xl relative overflow-auto no-scrollbar">
                         {children}
                     </div>
 
