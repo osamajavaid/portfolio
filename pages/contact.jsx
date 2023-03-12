@@ -1,5 +1,10 @@
 import Typewriter from 'typewriter-effect';
 import BannerLayout from '../components/BannerLayout';
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { SiUpwork, SiFiverr } from 'react-icons/si'
+import { HiMail } from 'react-icons/hi'
+import Fiverr_Icon from '../components/Fiverr_Icon';
+// import { ReactComponent as Fiverr } from '../public/images/svgs/fiverr.svg';
 
 const contact = () => {
     return (
@@ -38,8 +43,12 @@ const contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-16 w-full bg-red-700">
-
+                <div className="h-16 w-full bg-red-700 text-3xl flex gap-x-10 items-center justify-center">
+                    <a href="#"><HiMail /></a>
+                    <a href="#"><FaGithub /></a>
+                    <a href="#"><FaLinkedin /></a>
+                    <a href="#"><FaTwitter /></a>
+                    <a href="#"><SiUpwork /></a>
                 </div>
             </BannerLayout>
 
