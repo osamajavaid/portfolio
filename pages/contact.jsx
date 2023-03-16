@@ -49,7 +49,7 @@ const contact = () => {
                     <a href="#"><FaLinkedin /></a>
                     <a href="#"><FaTwitter /></a>
                     <a href="#"><SiUpwork /></a>
-                    <a href="#"><SiUpwork /></a>
+                    {/* <a href="#"><SiUpwork /></a> */}
                 </div>
             </BannerLayout>
 
