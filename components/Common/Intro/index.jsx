@@ -33,10 +33,10 @@ const Intro = () => {
 
             {/* fixed at bottom */}
             <div className="footerr absolute flex justify-center space-x-6 text-xl items-center bottom-0 z-50 h-10 w-full bg-gray-800 text-white">
-                <div className=""><FaGithub /></div>
-                <div className=""><FaTwitter /></div>
-                <div className=""><FaFacebook /></div>
-                <div className=""><FaLinkedin /></div>
+                <a href='https://github.com/osamajavaid' target='_blank' className=""><FaGithub /></a>
+                <a href='https://twitter.com/iosamajavaid' target='_blank' className=""><FaTwitter /></a>
+                <a href='' target='_blank' className=""><FaFacebook /></a>
+                <a href='https://www.linkedin.com/in/reachOsama' target='_blank' className=""><FaLinkedin /></a>
             </div>
 
         </>

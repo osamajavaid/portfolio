@@ -1,5 +1,5 @@
-import Intro from '../components/Intro'
-import Nav from '../components/Nav/Nav'
+import Intro from '../components/Common/Intro'
+import Nav from '../components/Common/Nav/Nav'
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { useState } from 'react'
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
                         <Intro />
                     </div>
                     {/* overlay */}
-                    {intro && <div onClick={(e) => setIntro(false)} className='fixed top-0 left-0  w-full h-full bg-black/5 z-40 backdrop-blur-sm'></div>}
+                    {intro && <div onClick={(e) => setIntro(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 backdrop-blur-[2px] z-40'></div>}
 
                     {/* middle of screen */}
                     <div className="w-full h-auto lg:w-9/12 shadow-2xl relative overflow-auto no-scrollbar">
@@ -46,7 +46,7 @@ export default function Layout({ children }) {
                     </div>
                     {open && <Nav setOpen={setOpen} />}
                     {/* overlay */}
-                    {open && <div onClick={(e) => setOpen(false)} className='fixed top-0 left-0  w-full h-full bg-black/5 z-50 backdrop-blur-sm'></div>}
+                    {open && <div onClick={(e) => setOpen(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 z-50 backdrop-blur-[2px]'></div>}
 
                 </div>
             </div>
