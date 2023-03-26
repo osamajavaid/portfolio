@@ -1,7 +1,7 @@
 import { ImCross } from 'react-icons/im'
 import { FiAward } from 'react-icons/fi'
-import { FaRegHandshake } from 'react-icons/fa'
-import { GoHome } from 'react-icons/go'
+import { FaHandshake } from 'react-icons/fa'
+import { ImHome } from 'react-icons/im'
 import { HiIdentification } from 'react-icons/hi'
 import NavItem from './NavItem'
 
@@ -13,8 +13,8 @@ const Nav = ({ setOpen }) => {
                 <ImCross />
             </div>
             <div className="flex flex-col gap-y-2 px-6 w-full">
-                <NavItem setOpen={setOpen} NavRoute={'/'} NavIcon={<GoHome />} NavText={'Home'} />
-                <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaRegHandshake />} NavText={'Contact'} />
+                <NavItem setOpen={setOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
+                <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
                 <NavItem setOpen={setOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
                 <NavItem setOpen={setOpen} NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
             </div>

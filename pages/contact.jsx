@@ -44,19 +44,19 @@ const contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-16 w-full bg-[#20202a] text-3xl flex gap-x-16 items-center justify-center text-white">
+                <div className="h-16 w-full bg-[#20202a] text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-white">
                     <a className='hover:scale-125 ease-in-out duration-700' href="#"><HiMail /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="#"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="#"><FaLinkedin /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="#"><FaTwitter /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="#"><Fiverr_Icon /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 text-4xl mt-1' href="#"><SiUpwork /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="#"><Fiverr_Icon /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#"><SiUpwork /></a>
                 </div>
 
 
-                <div className="my-12 px-4  w-full h-auto text-white">
+                <div className="my-12 w-full h-auto text-white">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div class="py-4 px-8 bg-[#20202a] text-sm">
+                    <div class="mt-4 py-4 px-4 bg-[#20202a] text-sm">
                         <div>
                             <div class="flex flex-col w-full">
                                 <div class="relative mb-6">
@@ -86,7 +86,7 @@ const contact = () => {
                             </div>
 
                             <div class="my-4">
-                                <button class="px-8 py-2  bg-yellow-700 text-white text-base font-medium"> SEND MESSAGE </button>
+                                <button onClick={() => alert('working on the feature')} class="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
                             </div>
                         </div>
                     </div>

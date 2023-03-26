@@ -8,7 +8,7 @@ const LinearBar = ({ title, percent }) => {
                 <span className="text-xs text-white">{percent}</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div className="bg-blue-600 h-2.5 rounded-full w-16" style={{ width: `${percent}` }}></div>
+                <div className="bg-yellow-500 h-2.5 rounded-full w-16" style={{ width: `${percent}` }}></div>
             </div>
         </div>
     )
