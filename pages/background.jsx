@@ -77,9 +77,9 @@ const expCards = [
 function background() {
     return (
         <BannerLayout>
-            <div class="grid md:grid-cols-2 md:divide-x-4 md:divide-yellow-600 px-4 pb-2 pt-10">
-                <div class="order-2 md:order-1">
-                    <div class="mt-10 md:mt-0 text-xl text-white font-semibold">Education</div>
+            <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-yellow-600 px-4 pb-2 pt-10">
+                <div className="order-2 md:order-1">
+                    <div className="mt-10 md:mt-0 text-xl text-white font-semibold">Education</div>
                     {
                         eduCards.map((data, key) =>
                             <Edu_Card key={key} data={data} />
@@ -87,9 +87,9 @@ function background() {
                     }
 
                 </div>
-                <div class="order-1 md:order-2">
-                    <div class="md:ml-12">
-                        <div class="md:pt-0 pt-4 text-xl text-white font-semibold">Experience</div>
+                <div className="order-1 md:order-2">
+                    <div className="md:ml-12">
+                        <div className="md:pt-0 pt-4 text-xl text-white font-semibold">Experience</div>
 
                         {
                             expCards.map((data, key) =>

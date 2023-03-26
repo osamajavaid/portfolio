@@ -7,7 +7,7 @@ const ReviewCard = ({ data }) => {
             <div className="flex justify-between items-center">
                 <div className="flex flex-col gap-1">
                     <span className="text-sm text-white font-bold">{data?.clientName}</span>
-                    <div className="text-xs flex items-center gap-1">
+                    <div className="text-xs text-gray-500 flex items-center gap-1">
                         <MdLocationOn />
                         <em>{data?.clientLocation}</em>
                     </div>

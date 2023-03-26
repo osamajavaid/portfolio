@@ -56,37 +56,37 @@ const contact = () => {
 
                 <div className="my-12 w-full h-auto text-white">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div class="mt-4 py-4 px-4 bg-[#20202a] text-sm">
+                    <div className="mt-4 py-4 px-4 bg-[#20202a] text-sm">
                         <div>
-                            <div class="flex flex-col w-full">
-                                <div class="relative mb-6">
-                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
+                            <div className="flex flex-col w-full">
+                                <div className="relative mb-6">
+                                    <div className="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
                                         <HiUser />
                                     </div>
-                                    <input type="text" id="input-group-1" class="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Name" />
+                                    <input type="text" id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Name" />
                                 </div>
                             </div>
 
-                            <div class="flex flex-col w-full">
-                                <div class="relative mb-6">
-                                    <div class="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
+                            <div className="flex flex-col w-full">
+                                <div className="relative mb-6">
+                                    <div className="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
                                         <HiMail />
                                     </div>
-                                    <input type="text" id="input-group-1" class="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Email" />
+                                    <input type="text" id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Email" />
                                 </div>
                             </div>
 
-                            <div class="flex flex-col w-full">
-                                <div class="relative mb-6">
-                                    <div class="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
+                            <div className="flex flex-col w-full">
+                                <div className="relative mb-6">
+                                    <div className="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
                                         <BsChatTextFill />
                                     </div>
-                                    <textarea rows={6} cols={50} id="input-group-1" class="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Message" />
+                                    <textarea rows={6} cols={50} id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Message" />
                                 </div>
                             </div>
 
-                            <div class="my-4">
-                                <button onClick={() => alert('working on the feature')} class="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
+                            <div className="my-4">
+                                <button onClick={() => alert('working on the feature')} className="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
                             </div>
                         </div>
                     </div>

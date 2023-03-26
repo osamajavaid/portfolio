@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 
             <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>
                 <div className="lg:hidden">
-                    <div className="bg-gray-800 w-full h-10 flex items-center justify-between px-2 lg:hidden">
+                    <div className="bg-gray-800 text-gray-500 w-full h-10 flex items-center justify-between px-2 lg:hidden">
                         <div onClick={e => setIntro(!intro)}>
                             <CgMenuRightAlt />
                         </div>
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
                     {/* right side */}
                     {/* right side */}
                     <div className={`block absolute lg:w-20 lg:relative bg-[#20202A] shadow-2xl`}>
-                        <div onClick={e => setOpen(!open)} className="bg-gray-800 hidden lg:flex items-center h-16 justify-center text-2xl ">
+                        <div onClick={e => setOpen(!open)} className="bg-gray-800 text-gray-500 hidden lg:flex items-center h-16 justify-center text-2xl ">
                             <CgMenuRightAlt />
                         </div>
                     </div>
