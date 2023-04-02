@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import { useQuery } from "react-query";
 import axios from "axios";
 
-function background() {
+function Background() {
     const [isData, setIsData] = useState([]);
 
     const { isLoading, error, data } = useQuery('background', () =>
@@ -47,4 +47,4 @@ function background() {
     );
 }
 
-export default background;
+export default Background;
