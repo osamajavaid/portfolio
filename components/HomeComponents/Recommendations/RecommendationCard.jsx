@@ -4,7 +4,7 @@ const RecommendationCard = ({ data }) => {
     return (
         <div className="bg-main-color h-full relative">
             <div className="bg-[#20202a] p-8 h-full relative">
-                <img src="images/avtar.png" className="absolute z-10 right-10 -top-5 border-yellow-500 w-16 h-16  border-2 rounded-full m-0" />
+                <img src={data?.image} className="absolute z-10 right-10 -top-5 border-yellow-500 w-16 h-16  border-2 rounded-full m-0" />
                 <div className=" text-white">
                     <a href={data?.linkednURL} target="_blank">{data?.name}</a>
                 </div>

@@ -1,43 +1,27 @@
+import { useState } from "react";
 import ReviewCard from "./ReviewCard"
+import axios from "axios";
+import { useQuery } from "react-query";
 
-const reviewCard = [
-    {
-        id: 0,
-        clientName: 'Mustafash',
-        clientLocation: 'Egypt',
-        clientSource: 'Fiverr',
-        clientReview: 'It is always nice to work with him. The work is finished quickly and he does more than is asked of him. It is also clear that he has a lot of knowledge of the work he does. I look forward to our next collaboration.'
-    },
-    {
-        id: 2,
-        clientName: 'Mustafash',
-        clientLocation: 'Egypt',
-        clientSource: 'Fiverr',
-        clientReview: 'It is always nice to work with him. The work is finished quickly and he does more than is asked of him. It is also clear that he has a lot of knowledge of the work he does. I look forward to our next collaboration.'
-    },
-    {
-        id: 3,
-        clientName: 'Mustafash',
-        clientLocation: 'Egypt',
-        clientSource: 'Fiverr',
-        clientReview: 'It is always nice to work with him. The work is finished quickly and he does more than is asked of him. It is also clear that he has a lot of knowledge of the work he does. I look forward to our next collaboration.'
-    },
-    {
-        id: 4,
-        clientName: 'Mustafash',
-        clientLocation: 'Egypt',
-        clientSource: 'Fiverr',
-        clientReview: 'It is always nice to work with him. The work is finished quickly and he does more than is asked of him. It is also clear that he has a lot of knowledge of the work he does. I look forward to our next collaboration.'
-    },
-]
+
 
 const ClientReviews = () => {
+    const [isData, setIsData] = useState([]);
+
+    const { isLoading, error, data } = useQuery('review', () =>
+        axios.get('api/review')
+            .then(({ data }) => setIsData(data))
+            .catch(error => console.error('Error fetching testimonials:', error)))
+
+
+    if (isLoading) return <p>Loading...</p>
+    if (error) return <p>Error :(</p>
     return (
         <>
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">Clients Reviews</div>
             <div className="overflow-auto w-full grid  justify-items-center grid-flow-col gap-4 px-2 md:px-8">
 
-                {reviewCard.map((data, key) => <ReviewCard key={key} data={data} />)}
+                {isData.map((data, key) => <ReviewCard key={key} data={data} />)}
 
             </div>
 

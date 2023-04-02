@@ -1,42 +1,26 @@
+import { useEffect, useState } from "react";
 import RecommendationCard from "./RecommendationCard"
+import axios from "axios";
+import { useQuery } from "react-query";
 
-const recommendationCard = [
-    {
-        id: 0,
-        name: 'Adam Murphy',
-        designation: 'GSR MERL | Grad student at UC Santa Cruz',
-        view: "Osama is a great student who is an enthusiastic learner. He is always ready to learn new skills and is a very hard worker. His leadership skills are maturing and he is in the right direction for success.",
-        linkednURL: "#"
-    },
-    {
-        id: 1,
-        name: 'Adam Murphy',
-        designation: 'GSR MERL | Grad student at UC Santa Cruz',
-        view: "Osama is a great student who is an enthusiastic learner. He is always ready to learn new skills and is a very hard worker. His leadership skills are maturing and he is in the right direction for success.",
-        linkednURL: "#"
-    },
-    {
-        id: 2,
-        name: 'Adam Murphy',
-        designation: 'GSR MERL | Grad student at UC Santa Cruz',
-        view: "Osama is a great student who is an enthusiastic learner. He is always ready to learn new skills and is a very hard worker. His leadership skills are maturing and he is in the right direction for success.",
-        linkednURL: "#"
-    },
-    {
-        id: 3,
-        name: 'Adam Murphy',
-        designation: 'GSR MERL | Grad student at UC Santa Cruz',
-        view: "Osama is a great student who is an enthusiastic learner. He is always ready to learn new skills and is a very hard worker. His leadership skills are maturing and he is in the right direction for success.",
-        linkednURL: "#"
-    },
-]
 const Recommendations = () => {
+    const [isData, setIsData] = useState([]);
+
+    const { isLoading, error, data } = useQuery('recommendations', () =>
+        axios.get('api/recommendations')
+            .then(({ data }) => setIsData(data))
+            .catch(error => console.error('Error fetching testimonials:', error)))
+
+
+    if (isLoading) return <p>Loading...</p>
+    if (error) return <p>Error :(</p>
+
     return (
         <>
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">Recommendations</div>
             <div className="grid h-full mt-5 justify-items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-x-4 gap-y-12 px-2 md:px-8 pb-8">
 
-                {recommendationCard.map((data, key) => <RecommendationCard key={key} data={data} />)}
+                {isData.map((data, key) => <RecommendationCard key={key} data={data} />)}
 
             </div>
         </>
