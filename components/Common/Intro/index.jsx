@@ -32,10 +32,10 @@ const Intro = () => {
 
             {/* fixed at bottom */}
             <div className="footerr absolute flex justify-center space-x-6 text-xl items-center bottom-0 z-50 h-10 w-full bg-[#23232f] text-white">
-                <a href='https://github.com/osamajavaid' target='_blank' className=""><FaGithub /></a>
-                <a href='https://twitter.com/iosamajavaid' target='_blank' className=""><FaTwitter /></a>
-                <a href='' target='_blank' className=""><FaFacebook /></a>
-                <a href='https://www.linkedin.com/in/reachOsama' target='_blank' className=""><FaLinkedin /></a>
+                <a href='https://github.com/osamajavaid' target='_blank' rel="noreferrer" className=""><FaGithub /></a>
+                <a href='https://twitter.com/iosamajavaid' target='_blank' rel="noreferrer" className=""><FaTwitter /></a>
+                <a href='' target='_blank' rel="noreferrer" className=""><FaFacebook /></a>
+                <a href='https://www.linkedin.com/in/reachOsama' target='_blank' rel="noreferrer" className=""><FaLinkedin /></a>
             </div>
 
         </>

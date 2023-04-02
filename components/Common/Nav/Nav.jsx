@@ -14,9 +14,9 @@ const Nav = ({ setOpen }) => {
             </div>
             <div className="flex flex-col gap-y-2 px-6 w-full">
                 <NavItem setOpen={setOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
-                <NavItem setOpen={setOpen} NavRoute={'/Contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
-                <NavItem setOpen={setOpen} NavRoute={'/Background'} NavIcon={<HiIdentification />} NavText={'Background'} />
-                <NavItem setOpen={setOpen} NavRoute={'/Portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
+                <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
+                <NavItem setOpen={setOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
+                <NavItem setOpen={setOpen} NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
             </div>
         </div>
     )
