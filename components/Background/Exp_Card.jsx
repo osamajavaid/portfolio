@@ -8,7 +8,7 @@ const Exp_Card = ({ data }) => {
                 {data.role}
             </div>
             <div className="text-gray-500 text-xs opacity-50 font-normal italic">
-                <a href={`${data.url}`} target="_blank">
+                <a href={`${data.url}`} target="_blank" rel="noreferrer">
                     {data.url}
                 </a>
             </div>

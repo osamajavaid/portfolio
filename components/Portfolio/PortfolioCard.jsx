@@ -15,6 +15,7 @@ const PortfolioCard = ({ data }) => {
                             <a
                                 href="https://github.com/rawheel/fastapi-boilerplate"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 {data?.projectName}
                             </a>
@@ -23,6 +24,7 @@ const PortfolioCard = ({ data }) => {
                             <a
                                 href="https://github.com/rawheel/fastapi-boilerplate"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <svg
                                     aria-hidden="true"
