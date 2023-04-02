@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
 import axios from "axios";
 
-const portfolio = () => {
+const Portfolio = () => {
     const [isData, setIsData] = useState([]);
 
     const { isLoading, error, data } = useQuery('portfolio', () =>
@@ -28,4 +28,4 @@ const portfolio = () => {
     );
 };
 
-export default portfolio;
+export default Portfolio;

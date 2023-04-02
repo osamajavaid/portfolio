@@ -7,7 +7,7 @@ import { BsChatTextFill } from 'react-icons/bs'
 import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
 
-const contact = () => {
+const Contact = () => {
     return (
         <BannerLayout>
             <div className=" px-4 py-2">
@@ -98,4 +98,4 @@ const contact = () => {
     )
 }
 
-export default contact
+export default Contact
