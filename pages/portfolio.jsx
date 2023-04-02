@@ -1,72 +1,26 @@
+import { useState } from "react";
+import { useQuery } from "react-query";
 import BannerLayout from "../components/Common/BannerLayout";
 import Footer from "../components/Footer";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
+import axios from "axios";
 
-const portfolioCard = [
-    {
-        id: 0,
-        projectName: "Nimbal",
-        projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
-        technologiesUsed: [
-            {
-                tech: "ReactJS"
-            },
-            {
-                tech: ".net"
-            },
-            {
-                tech: "Ant Design"
-            },
-            {
-                tech: "TailwindCSS"
-            },
-        ]
-    },
-    {
-        id: 1,
-        projectName: "Nimbal",
-        projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
-        technologiesUsed: [
-            {
-                tech: "NextJS"
-            },
-            {
-                tech: "NodeJS"
-            },
-            {
-                tech: "MUI"
-            },
-            {
-                tech: "TailwindCSS"
-            },
-        ]
-    },
-    {
-        id: 2,
-        projectName: "Nimbal",
-        projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
-        technologiesUsed: [
-            {
-                tech: "ReactJS"
-            },
-            {
-                tech: "NodeJS"
-            },
-            {
-                tech: "Ant Design"
-            },
-            {
-                tech: "TailwindCSS"
-            },
-        ]
-    },
-]
 const portfolio = () => {
+    const [isData, setIsData] = useState([]);
+
+    const { isLoading, error, data } = useQuery('portfolio', () =>
+        axios.get('api/portfolio')
+            .then(({ data }) => setIsData(data))
+            .catch(error => console.error('Error fetching testimonials:', error)))
+
+
+    if (isLoading) return <p>Loading...</p>
+    if (error) return <p>Error :(</p>
     return (
         <BannerLayout>
             <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-8 my-6">
 
-                {portfolioCard.map((data, key) => <PortfolioCard key={key} data={data} />)}
+                {isData.map((data, key) => <PortfolioCard key={key} data={data} />)}
 
             </div>
             <Footer />
