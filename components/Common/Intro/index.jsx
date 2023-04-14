@@ -2,7 +2,7 @@ import { FaDownload, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-i
 import Contact from './Contact'
 import Download from './Download'
 import Languages from './Languages'
-import Location from './location'
+import Location from './Location'
 import Tools from './Tools'
 import Skills from './Skills'
 
