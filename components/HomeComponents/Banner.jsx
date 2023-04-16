@@ -13,22 +13,22 @@ const Banner = () => {
                             </div>
                             <div className="">
                                 <div className=" py-4 pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
-                                    <span>{"<"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">code</span>
+                                    <span>{"<"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>
                                         {">"} <span className="text-white sm:text-xl xl:text-2xl font-bold"> I am  <span className="inline-block">
                                             <Typewriter
                                                 options={{
                                                     strings:
-                                                        ['MERN Stack Developer',
-                                                            'UI/UX Designer'],
+                                                        ['a MERN Stack Developer',
+                                                            'a NexJs Developer'],
                                                     autoStart: true,
                                                     loop: true,
                                                 }}
                                             />
                                         </span>
-                                        </span> {"</"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">code</span>{">"} </span>
+                                        </span> {"</"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>{">"} </span>
                                 </div>
                             </div>
-                            <button className="py-2 px-10 bg-yellow-500 text-black">Explore</button>
+                            <a href='#scroll-intro' className="py-2 px-10 bg-yellow-500 text-black">Explore</a>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
                             <img className='absolute top-7 w-full h-full' src="images/emoji.png" alt="emoji" />
