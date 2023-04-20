@@ -1,6 +1,7 @@
 import Intro from '../components/Common/Intro'
 import Nav from '../components/Common/Nav/Nav'
 import { CgMenuRightAlt } from 'react-icons/cg'
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { useState } from 'react'
 
 export default function Layout({ children }) {
@@ -11,11 +12,13 @@ export default function Layout({ children }) {
         <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>
             <div className="lg:hidden">
                 <div className="bg-gray-800 text-gray-500 w-full h-10 flex items-center justify-between px-2 lg:hidden">
-                    <div onClick={e => setIntro(!intro)}>
-                        <CgMenuRightAlt />
+                    <div className='icon flex items-center gap-x-2' onClick={e => setIntro(!intro)}>
+                        <BsArrowRight />
+                        <span>Tap for Intro</span>
                     </div>
-                    <div onClick={e => setOpen(!open)}>
-                        <CgMenuRightAlt />
+                    <div className='icon flex items-center gap-x-2' onClick={e => setOpen(!open)}>
+                        <span>Tap for Nav</span>
+                        <BsArrowLeft />
                     </div>
                 </div>
             </div>

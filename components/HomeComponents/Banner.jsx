@@ -14,12 +14,12 @@ const Banner = () => {
                             <div className="">
                                 <div className=" py-4 pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
                                     <span>{"<"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>
-                                        {">"} <span className="text-white sm:text-xl xl:text-2xl font-bold"> I am  <span className="inline-block">
+                                        {">"} <span className="text-white sm:text-xl xl:text-2xl font-bold"> I am a  <span className="inline-block">
                                             <Typewriter
                                                 options={{
                                                     strings:
-                                                        ['a MERN Stack Developer',
-                                                            'a NexJs Developer'],
+                                                        ['MERN Stack Developer',
+                                                            'NexJs Developer'],
                                                     autoStart: true,
                                                     loop: true,
                                                 }}
