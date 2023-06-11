@@ -4,7 +4,7 @@ const PortfolioCard = ({ data }) => {
     return (
         <div className="bg-[#20202a] overflow-hidden h-full">
             <img
-                src="projects/project1.png"
+                src={data?.image}
                 alt="portfolio img"
                 className="w-full object-cover h-32 sm:h-48 md:h-64"
             />
