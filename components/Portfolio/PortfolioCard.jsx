@@ -13,7 +13,7 @@ const PortfolioCard = ({ data }) => {
                     <div className="flex justify-between p-0 m-0 ">
                         <h3 className="mr-2 font-semibold pt-2 text-2xl text-white leading-tight sm:leading-normal">
                             <a
-                                href="https://github.com/rawheel/fastapi-boilerplate"
+                                href={data?.url}
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -22,7 +22,7 @@ const PortfolioCard = ({ data }) => {
                         </h3>
                         <div className="text-white transition duration-500 hover:text-yellow transform hover:-translate-y-1 hover:scale-110 pt-4 text-base">
                             <a
-                                href="https://github.com/rawheel/fastapi-boilerplate"
+                                href={data?.url}
                                 target="_blank"
                                 rel="noreferrer"
                             >

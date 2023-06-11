@@ -2,6 +2,7 @@ const portfolio = [
     {
         id: 0,
         projectName: "JMM Technologies",
+        url: "https://jmm.ltd/",
         image: "projects/jmm.png",
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
@@ -22,7 +23,8 @@ const portfolio = [
     {
         id: 1,
         projectName: "Otawix",
-        image: "projects/Otawix.png",
+        url: "https://b2c.otawix.com/",
+        image: "projects/otawix.png",
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
             {
@@ -42,6 +44,7 @@ const portfolio = [
     {
         id: 2,
         projectName: "Spatay",
+        url: "https://spatay.com/",
         image: "projects/spatay.png",
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
@@ -62,6 +65,7 @@ const portfolio = [
     {
         id: 2,
         projectName: "Culyte",
+        https: "https://culyte.com/",
         image: "projects/culyte.png",
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
