@@ -5,26 +5,25 @@ import BannerLayout from "../components/Common/BannerLayout";
 import Footer from "../components/Footer";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { Skeleton } from "antd";
 
 function Background() {
-    const [isData, setIsData] = useState([]);
 
     const { isLoading, error, data } = useQuery('background', () =>
         axios.get('api/background')
-            .then(({ data }) => setIsData(data))
+            .then(({ data }) => data)
             .catch(error => console.error('Error fetching testimonials:', error)))
 
-
-    if (isLoading) return <p>Loading...</p>
-    if (error) return <p>Error :(</p>
     return (
         <BannerLayout>
             <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-yellow-600 px-4 pb-2 pt-10">
                 <div className="order-2 md:order-1">
                     <div className="mt-10 md:mt-0 text-xl text-white font-semibold">Education</div>
                     {
-                        isData[0]?.eduCards.map((data, key) =>
-                            <Edu_Card key={key} data={data} />
+                        data && data[0]?.eduCards?.map((data, key) =>
+                            <Skeleton active round loading={isLoading} >
+                                <Edu_Card key={key} data={data} />
+                            </Skeleton>
                         )
                     }
 
@@ -34,8 +33,10 @@ function Background() {
                         <div className="md:pt-0 pt-4 text-xl text-white font-semibold">Experience</div>
 
                         {
-                            isData[1]?.expCards.map((data, key) =>
-                                <Exp_Card key={key} data={data} />
+                            data && data[1]?.expCards?.map((data, key) =>
+                                <Skeleton active round loading={isLoading} >
+                                    <Exp_Card key={key} data={data} />
+                                </Skeleton>
                             )
                         }
 
