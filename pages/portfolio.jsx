@@ -7,16 +7,11 @@ import axios from "axios";
 import { Skeleton } from "antd";
 
 const Portfolio = () => {
-    const [isData, setIsData] = useState([]);
 
     const { isLoading, error, data } = useQuery('portfolio', () =>
         axios.get('api/portfolio')
             .then(({ data }) => data)
             .catch(error => console.error('Error fetching testimonials:', error)))
-
-
-    // if (isLoading) return <p>Loading...</p>
-    // if (error) return <p>Error :(</p>
     return (
         <BannerLayout>
             <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-8 my-6">
