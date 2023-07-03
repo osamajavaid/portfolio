@@ -1,8 +1,7 @@
-import { useState } from "react";
 import ExpertiseCard from "./ExpertiseCard"
 import { useQuery } from "react-query";
 import axios from "axios";
-import { Skeleton } from 'antd';
+import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
 
 const MyExpertise = () => {
@@ -16,14 +15,14 @@ const MyExpertise = () => {
         <>
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">My Expertise</div>
             <div className="grid justify items-center grid-flow-row md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-4 px-2 md:px-8 " >
-                {
-                    data?.map((data, key) => (
-                        <Skeleton active round loading={isLoading} >
-                            <ExpertiseCard key={key} data={data} />
-                        </Skeleton>
-                    ))
 
-                }
+                {isLoading && [1, 2, 3, 4, 5, 6].map((data, key) => (
+                    <ParagraphSkeleton className={"space-y-2 p-8"} />
+                ))}
+                {!isLoading && data.map((data, key) => (
+                    <ExpertiseCard key={key} data={data} />
+                ))}
+
             </div>
         </>
     )
