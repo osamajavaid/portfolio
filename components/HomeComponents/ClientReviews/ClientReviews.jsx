@@ -18,7 +18,7 @@ const ClientReviews = () => {
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-white">Clients Reviews</div>
             <div className="overflow-auto w-full grid  justify-items-center grid-flow-col gap-4 px-2 md:px-8">
 
-                {isLoading && [1, 2, 3, 4, 5].map((data, key) => (
+                {isLoading && [1, 2, 3, 4, 5].map(() => (
                     <ParagraphSkeleton className="w-80 md:w-96 h-full p-4 md:p-8" />
                 ))}
                 {!isLoading && data.map((data, key) => (
