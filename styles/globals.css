@@ -67,3 +67,7 @@ body {
         }
       }
   }
+  /* antd css */
+  .ant-progress-text{
+    color:white !important
+  }
