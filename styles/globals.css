@@ -76,3 +76,11 @@ body {
   .ant-progress-text{
     color:white !important
   }
+  .ant-modal .ant-modal-content{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    height: 200px;
+  }

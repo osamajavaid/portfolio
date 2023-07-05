@@ -42,6 +42,7 @@ export default function Layout({ children }) {
                     <div onClick={e => setOpen(!open)} className="bg-gray-800 text-yellow-500 hidden lg:flex items-center h-16 justify-center text-2xl ">
                         <span className='icon border-2 border-yellow-500 p-2 rounded-xl'> <FaBars /></span>
                     </div>
+                    <span className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 flex items-center justify-center text-center text-xl text-gray-600 font-extrabold tracking-widest'>NavBar</span>
                 </div>
                 {<Nav open={open} setOpen={setOpen} />}
                 {/* overlay */}

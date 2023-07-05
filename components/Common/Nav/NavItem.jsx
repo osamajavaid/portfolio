@@ -11,7 +11,7 @@ const NavItem = ({ NavIcon, NavText, NavRoute, setOpen }) => {
         <Link
             onClick={(e) => setOpen(false)}
             href={NavRoute}
-            className={`${className} flex items-center px-2 hover:bg-yellow-500 text-gray-400 hover:text-gray-900  py-1 font-semibold space-x-4 text-base`}
+            className={`${className} transition flex items-center px-2 hover:bg-yellow-500 text-gray-400 hover:text-gray-900  py-1 font-semibold space-x-4 text-base`}
         >
             {NavIcon}
             <span>{NavText}</span>

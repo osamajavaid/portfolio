@@ -6,8 +6,12 @@ import { HiMail, HiUser } from 'react-icons/hi'
 import { BsChatTextFill } from 'react-icons/bs'
 import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
+import { Modal } from 'antd';
+import { useState } from 'react';
 
 const Contact = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <BannerLayout>
             <div className=" px-4 py-2">
@@ -56,7 +60,7 @@ const Contact = () => {
 
                 <div className="my-12 w-full h-auto text-white">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div className="mt-4 py-4 px-4 bg-[#20202a] text-sm">
+                    <div className="mt-4 py-8 px-8 bg-[#20202a] text-sm">
                         <div>
                             <div className="flex flex-col w-full">
                                 <div className="relative mb-6">
@@ -86,12 +90,28 @@ const Contact = () => {
                             </div>
 
                             <div className="my-4">
-                                <button onClick={() => alert('working on the feature')} className="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
+                                <button onClick={() => setIsOpen(true)} className="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* success modal */}
+            <Modal
+                className='bg-slate-800 backdrop-blur-lg rounded-md drop-shadow-lg'
+                // wrapClassName='bg-red-800'
+                centered
+                open={isOpen}
+                footer={null}
+                closable={false}
+                onOk={() => setIsOpen(false)}
+                onCancel={() => setIsOpen(false)}
+            >
+                <div className='flex flex-col items-center justify-center'>
+                    <h1 className='text-yellow-500 font-bold text-2xl'>In Progress</h1>
+                    <a className='underline text-white' target='_blank' href='https://github.com/osamajavaid/portfolio'>Be the one to integrate this!</a>
+                </div>
+            </Modal>
             <Footer />
         </BannerLayout>
 

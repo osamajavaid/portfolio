@@ -10,10 +10,10 @@ const Nav = ({ setOpen, open }) => {
     return (
         <main
             className={
-                " fixed overflow-hidden z-[50000] bg-gray-900/50 backdrop-blur-sm transition inset-0 transform ease-in" +
+                " fixed overflow-hidden z-[50000] bg-gray-900/50 backdrop-blur-sm inset-0 transform ease-in" +
                 (open
-                    ? "transition-opacity opacity-100 duration-500 translate-x-0  "
-                    : "transition-all delay-500 opacity-0 translate-x-full")
+                    ? "transition-opacity opacity-100 duration-10 translate-x-0"
+                    : "transition-all delay-200 opacity-0 translate-x-full")
             }
         >
             <section
@@ -27,7 +27,7 @@ const Nav = ({ setOpen, open }) => {
                         <div onClick={e => setOpen(false)} className="flex text-gray-500 absolute top-0 w-full items-center justify-center text-sm h-12 bg-gray-800">
                             <ImCross />
                         </div>
-                        <div className="flex flex-col gap-y-2 px-6 w-full">
+                        <div className="flex flex-col gap-y-2 px-6 w-full transition">
                             <NavItem setOpen={setOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
                             <NavItem setOpen={setOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
                             <NavItem setOpen={setOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
