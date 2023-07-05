@@ -12,6 +12,11 @@ body {
 }
 
 @layer utilities {
+  @layer components {
+    .transition {
+      @apply transition-all delay-75 duration-700;
+    }
+  }
     @variants responsive {
       /* Hide scrollbar for Chrome, Safari and Opera */
       .no-scrollbar::-webkit-scrollbar {
@@ -66,4 +71,8 @@ body {
           transform: scale(1);
         }
       }
+  }
+  /* antd css */
+  .ant-progress-text{
+    color:white !important
   }

@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import BannerLayout from '../Common/BannerLayout';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
     return (
@@ -12,7 +13,7 @@ const Banner = () => {
                                 <h1 className="text-3xl sm:text-4xl xl:text-5xl text-white font-bold">Hello, Check This Out!</h1>
                             </div>
                             <div className="">
-                                <div className=" py-4 pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
+                                <div className=" py-4 text-white pb-4 text-xs h-20 lg:h-auto" style={{ fontFamily: 'monospace' }}>
                                     <span>{"<"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>
                                         {">"} <span className="text-white sm:text-xl xl:text-2xl font-bold"> I am a  <span className="inline-block">
                                             <Typewriter
@@ -28,7 +29,7 @@ const Banner = () => {
                                         </span> {"</"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>{">"} </span>
                                 </div>
                             </div>
-                            <a href='#scroll-intro' className="py-2 px-10 bg-yellow-500 text-black">Explore</a>
+                            <Link to='intro' className="py-2 px-10 bg-yellow-500 text-black cursor-pointer" spy={true} smooth={true} duration={500} offset={-50}>Explore</Link>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
                             <img className='absolute top-7 w-full h-full' src="images/emoji.png" alt="emoji" />

@@ -1,6 +1,6 @@
 import Intro from '../components/Common/Intro'
 import Nav from '../components/Common/Nav/Nav'
-import { CgMenuRightAlt } from 'react-icons/cg'
+import { FaBars } from 'react-icons/fa'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { useState } from 'react'
 
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     return (
         <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>
             <div className="lg:hidden">
-                <div className="bg-gray-800 text-gray-500 w-full h-10 flex items-center justify-between px-2 lg:hidden">
+                <div className=" bg-gray-800 text-gray-500 w-full h-10 flex items-center justify-between px-2 lg:hidden">
                     <div className='icon flex items-center gap-x-2' onClick={e => setIntro(!intro)}>
                         <BsArrowRight />
                         <span>Tap for Intro</span>
@@ -39,13 +39,13 @@ export default function Layout({ children }) {
                 {/* right side */}
                 {/* right side */}
                 <div className={`block absolute lg:w-20 lg:relative bg-[#20202A] shadow-2xl`}>
-                    <div onClick={e => setOpen(!open)} className="bg-gray-800 text-gray-500 hidden lg:flex items-center h-16 justify-center text-2xl ">
-                        <CgMenuRightAlt />
+                    <div onClick={e => setOpen(!open)} className="bg-gray-800 text-yellow-500 hidden lg:flex items-center h-16 justify-center text-2xl ">
+                        <span className='icon border-2 border-yellow-500 p-2 rounded-xl'> <FaBars /></span>
                     </div>
                 </div>
-                {open && <Nav setOpen={setOpen} />}
+                {<Nav open={open} setOpen={setOpen} />}
                 {/* overlay */}
-                {open && <div onClick={(e) => setOpen(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 z-50 backdrop-blur-[2px]'></div>}
+                {/* {open && <div onClick={(e) => setOpen(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 z-50 backdrop-blur-[2px]'></div>} */}
 
             </div>
         </div>
