@@ -1,5 +1,5 @@
-<h1>An Open Source Resume</h1>
-<h6>You are welcome to contribute</h6>
+<h1>An Open Source Portfolio</h1>
+<h5>You are welcome to contribute</h5>
 
 ## Getting Started
 
