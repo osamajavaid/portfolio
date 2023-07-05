@@ -20,9 +20,9 @@ function Background() {
             <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-yellow-600 px-4 pb-2 pt-10">
                 <div className="order-2 md:order-1">
                     <div className="mt-10 md:mt-0 text-xl text-white font-semibold">Education</div>
-                    {isLoading ?
-                        [1, 2, 3, 4].map(() => (
-                            <ParagraphSkeleton className={"p-8 h-full w-full relative"} />
+                    {!isLoading ?
+                        [1, 2, 3].map(() => (
+                            <ParagraphSkeleton className={"p-8 w-full relative"} />
                         ))
                         :
                         data[0]?.eduCards?.map((data, key) => (
@@ -35,12 +35,12 @@ function Background() {
                     <div className="md:ml-12">
                         <div className="md:pt-0 pt-4 text-xl text-white font-semibold">Experience</div>
 
-                        {isLoading ?
+                        {!isLoading ?
                             [1, 2, 3, 4].map(() => (
                                 <ParagraphSkeleton className={"p-8 h-full w-full relative"} />
                             ))
                             :
-                            data[1]?.expCards?.map((data, key) => (
+                            data && data[1]?.expCards?.map((data, key) => (
                                 <Exp_Card key={key} data={data} />
                             ))
                         }
