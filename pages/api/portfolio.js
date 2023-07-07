@@ -65,7 +65,7 @@ const portfolio = [
     {
         id: 2,
         projectName: "Culyte",
-        https: "https://culyte.com/",
+        url: "https://culyte.com",
         image: "projects/culyte.png",
         projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
         technologiesUsed: [
