@@ -29,7 +29,7 @@ const Banner = () => {
                                         </span> {"</"}<span className="text-yellow-600 sm:text-base xl:text-lg font-bold">div</span>{">"} </span>
                                 </div>
                             </div>
-                            <Link to='intro' className="py-2 px-10 bg-yellow-500 text-black cursor-pointer" spy={true} smooth={true} duration={500} offset={-50}>Explore</Link>
+                            <Link to='intro' spy={true} smooth={true} duration={500} offset={-50} className="py-2 px-10 bg-yellow-500 text-black cursor-pointer">Explore</Link>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
                             <img className='absolute top-7 w-full h-full' src="images/emoji.png" alt="emoji" />
@@ -38,7 +38,7 @@ const Banner = () => {
                 </div>
 
                 {/* details in row */}
-                <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex items-center justify-between w-full px-4">
+                <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex items-center justify-between w-full px-4 xl:px-8 2xl:px-16">
 
                     <div className="flex items-center gap-x-1">
                         <span className='text-base md:text-lg text-yellow-500 font-bold'>10+</span>

@@ -1,7 +1,7 @@
 const Download = ({ icon }) => {
     return (
         <>
-            <a id='intro' href="/osamajavaid-resume.pdf" className="flex flex-row text-gray-500 items-center gap-x-4 py-8 pt-4">
+            <a href="/osamajavaid-resume.pdf" className="flex flex-row text-gray-500 items-center gap-x-4 py-8 pt-4">
                 <span className="text-white">Download Resume</span>
                 <span>{icon}</span>
             </a>
