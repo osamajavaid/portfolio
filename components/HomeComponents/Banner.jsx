@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <BannerLayout>
             <div className="absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full bg-gradient-to-t from-MidNightBlack">
-                <div className="bg-LightGray/10 w-[95%] h-[90%] px-4 py-2 flex md:block">
+                <div className="bg-LightGray/10 w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block">
                     <div className="flex items-center md:items-center md:justify-around">
                         <div className="">
                             <div className="">
@@ -32,7 +32,7 @@ const Banner = () => {
                             <Link to='intro' spy={true} smooth={true} duration={500} offset={-50} className="py-3 px-8 rounded-xl bg-Green text-black cursor-pointer">Explore</Link>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
-                            <img className='absolute top-7 w-full h-full' src="images/emoji.png" alt="emoji" />
+                            <img className='absolute top-8 w-full h-full' src="images/emoji.png" alt="emoji" />
                         </div>
                     </div>
                 </div>

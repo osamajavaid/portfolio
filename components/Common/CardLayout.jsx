@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardLayout = ({ children, className = "h-full" }) => {
     return (
-        <div className={`${className} rounded-2xl`}
+        <div className={`${className} rounded-xl`}
             style={{
                 backgroundImage: `url(images/card-bg.jpg)`,
                 backgroundRepeat: 'no-repeat',
