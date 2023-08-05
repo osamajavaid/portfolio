@@ -4,7 +4,7 @@ import CardLayout from '../Common/CardLayout'
 const Exp_Card = ({ data }) => {
     return (
         <CardLayout>
-            <div className="backdrop-filter rounded-xl backdrop-blur-xl bg-MidNightBlack/95 hover:bg-MidNightBlack/90 transition px-8 py-10 mt-4 ">
+            <div className="card_stylings transition px-8 py-10 mt-4 ">
                 <div className="flex-initial text-[17px] text-Snow font-medium">{data.title}</div>
                 <div className="text-sm text-LightGray font-normal italic mt-1 ">
                     {data.role}
