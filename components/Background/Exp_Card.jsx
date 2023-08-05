@@ -4,20 +4,20 @@ import CardLayout from '../Common/CardLayout'
 const Exp_Card = ({ data }) => {
     return (
         <CardLayout>
-            <div className="backdrop-filter backdrop-blur-xl bg-[#20202a]/95 hover:bg-[#20202a]/90 transition bg-[#20202a] px-8 py-10 mt-4 ">
-                <div className="flex-initial text-[17px] text-white font-medium">{data.title}</div>
-                <div className="text-sm text-gray-500 font-normal italic mt-1 ">
+            <div className="backdrop-filter rounded-xl backdrop-blur-xl bg-MidNightBlack/95 hover:bg-MidNightBlack/90 transition px-8 py-10 mt-4 ">
+                <div className="flex-initial text-[17px] text-Snow font-medium">{data.title}</div>
+                <div className="text-sm text-LightGray font-normal italic mt-1 ">
                     {data.role}
                 </div>
-                <div className="text-gray-500 text-xs opacity-50 font-normal italic">
+                <div className="text-LightGray text-xs opacity-50 font-normal italic">
                     <a href={`${data.url}`} target="_blank" rel="noreferrer">
                         {data.url}
                     </a>
                 </div>
-                <div className="text-gray-500 text-sm font-normal mt-4 text-justify">
+                <div className="text-LightGray text-sm font-normal mt-4 text-justify">
                     {data.desc}
                 </div>
-                <div className="flex justify-between text-gray-500 bg-[#161a23] w-full h-auto text-xs rounded-full py-3 px-6 mt-4 font-normal opacity-50">
+                <div className="flex justify-between text-LightGray bg-DeepNightBlack w-full h-auto text-xs rounded-full py-3 px-6 mt-4 font-normal opacity-50">
                     <div>{data.year}</div> <div>{data.location}</div>
                 </div>
             </div>

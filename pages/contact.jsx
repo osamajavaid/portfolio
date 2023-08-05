@@ -15,10 +15,10 @@ const Contact = () => {
     return (
         <BannerLayout>
             <div className=" px-4 py-2">
-                <div className="my-6 text-white flex flex-col gap-y-5">
+                <div className="my-6 text-Snow flex flex-col gap-y-5">
                     <h1 className='text-lg font-bold'>Contact Information</h1>
                     <div className="flex flex-col md:flex-row items-center gap-5 text-xs">
-                        <div className="bg-[#20202a] w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
+                        <div className="bg-EveningBlack rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Country:</span>
                                 <span className='text-gray-400 md:text-sm'>Pakistan</span>
@@ -32,7 +32,7 @@ const Contact = () => {
                                 <span className='text-gray-400 md:text-sm'>CodeWorthy</span>
                             </div>
                         </div>
-                        <div className="bg-[#20202a] w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
+                        <div className="bg-EveningBlack rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Email:</span>
                                 <span className='text-gray-400 text-sm'>muhammadosamajavaid@gmail.com</span>
@@ -48,7 +48,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-16 w-full bg-[#20202a] text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-white">
+                <div className="h-16 w-full bg-EveningBlack rounded-xl text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
                     <a className='hover:scale-125 ease-in-out duration-700' href="#" target='_blank' rel="noreferrer"><HiMail /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="#" target='_blank' rel="noreferrer"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="#" target='_blank' rel="noreferrer"><FaLinkedin /></a>
@@ -58,16 +58,16 @@ const Contact = () => {
                 </div>
 
 
-                <div className="my-12 w-full h-auto text-white">
+                <div className="my-12 w-full h-auto text-Snow">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div className="mt-4 py-8 px-8 bg-[#20202a] text-sm">
+                    <div className="mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm">
                         <div>
                             <div className="flex flex-col w-full">
                                 <div className="relative mb-6">
                                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
                                         <HiUser />
                                     </div>
-                                    <input type="text" id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Name" />
+                                    <input type="text" id="input-group-1" className="bg-DeepNightBlack text-SilverGray text-sm rounded-lg focus:ring-Green focus:border-Green block w-full pl-10 p-2.5" placeholder="Name" />
                                 </div>
                             </div>
 
@@ -76,7 +76,7 @@ const Contact = () => {
                                     <div className="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
                                         <HiMail />
                                     </div>
-                                    <input type="text" id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Email" />
+                                    <input type="text" id="input-group-1" className="bg-DeepNightBlack text-SilverGray text-sm rounded-lg focus:ring-Green focus:border-Green block w-full pl-10 p-2.5" placeholder="Email" />
                                 </div>
                             </div>
 
@@ -85,12 +85,12 @@ const Contact = () => {
                                     <div className="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
                                         <BsChatTextFill />
                                     </div>
-                                    <textarea rows={6} cols={50} id="input-group-1" className="bg-[#161a23] text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" placeholder="Message" />
+                                    <textarea rows={6} cols={50} id="input-group-1" className="bg-DeepNightBlack text-SilverGray text-sm rounded-lg focus:ring-Green focus:border-Green block w-full pl-10 p-2.5" placeholder="Message" />
                                 </div>
                             </div>
 
                             <div className="my-4">
-                                <button onClick={() => setIsOpen(true)} className="px-8 py-2  bg-yellow-500 text-white text-base font-medium"> SEND MESSAGE </button>
+                                <button onClick={() => setIsOpen(true)} className="px-8 py-2  bg-Green rounded-xl text-Snow text-base font-medium"> SEND MESSAGE </button>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ const Contact = () => {
             >
                 <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-yellow-500 font-bold text-2xl'>In Progress</h1>
-                    <a className='underline text-white' target='_blank' href='https://github.com/osamajavaid/portfolio'>Be the one to integrate this!</a>
+                    <a className='underline text-Snow' target='_blank' href='https://github.com/osamajavaid/portfolio'>Be the one to integrate this!</a>
                 </div>
             </Modal>
             <Footer />
