@@ -3,23 +3,23 @@ import CardLayout from '../Common/CardLayout'
 
 const Edu_Card = ({ data }) => {
     return (
-        // <CardLayout>
-        <div className="backdrop-filter backdrop-blur-xl bg-[#20202a]/95 hover:bg-[#20202a]/90 transition bg-[#20202a] px-8 py-10 mt-4 md:mr-12">
-            <div className="flex justify-between">
-                <div className="flex-initial text-[17px] text-white font-medium">{data.title}</div>
-                <div className="flex justify-items-center justify-center text-gray-500 bg-[#161a23] ml-2 w-32 lg:w-28 h-10 text-xs rounded-full py-3 font-normal opacity-50 text-center">
-                    {" "}
-                    {data.year}{" "}
+        <CardLayout className='keepItEmpty'>
+            <div className="backdrop-filter rounded-xl backdrop-blur-xl bg-EveningBlack/95 hover:bg-EveningBlack/90 transition px-8 py-10 mt-4 ">
+                <div className="flex justify-between">
+                    <div className="flex-initial text-[17px] text-Snow font-medium">{data.title}</div>
+                    <div className="flex justify-items-center justify-center text-LightGray bg-DeepNightBlack ml-2 w-32 lg:w-28 h-10 text-xs rounded-full py-3 font-normal opacity-50 text-center">
+                        {" "}
+                        {data.year}{" "}
+                    </div>
+                </div>
+                <div className="text-xs text-LightGray font-normal italic mt-1 ">
+                    {data.degree}
+                </div>
+                <div className="text-LightGray text-sm font-normal mt-4 ">
+                    {data.detail}
                 </div>
             </div>
-            <div className="text-xs text-gray-500 font-normal italic mt-1 ">
-                {data.degree}
-            </div>
-            <div className="text-gray-500 text-sm font-normal mt-4 ">
-                {data.detail}
-            </div>
-        </div>
-        // </CardLayout>
+        </CardLayout>
     )
 }
 

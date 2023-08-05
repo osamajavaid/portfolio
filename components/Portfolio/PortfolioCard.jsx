@@ -2,16 +2,16 @@ import Badge from "../Common/Badge"
 
 const PortfolioCard = ({ data }) => {
     return (
-        <div className="bg-[#20202a] overflow-hidden h-full">
+        <div className="bg-EveningBlack rounded-xl overflow-hidden h-full">
             <img
                 src={data?.image}
                 alt="portfolio img"
                 className="w-full object-cover h-32 sm:h-48 md:h-64"
             />
             <div>
-                <div id="arrow" className="py-2 px-6 bg-[#20202a] hover:-translate-y-10 transition-all ease-in-out duration-500">
+                <div id="arrow" className="py-2 px-6 bg-EveningBlack hover:-translate-y-10 transition-all ease-in-out duration-500">
                     <div className="flex justify-between p-0 m-0 ">
-                        <h3 className="mr-2 underline italic font-semibold pt-2 text-2xl text-white leading-tight sm:leading-normal">
+                        <h3 className="mr-2 underline italic font-semibold pt-2 text-2xl text-Snow leading-tight sm:leading-normal">
                             <a
                                 href={data?.url}
                                 target="_blank"
@@ -20,7 +20,7 @@ const PortfolioCard = ({ data }) => {
                                 {data?.projectName}
                             </a>
                         </h3>
-                        <div className="text-white transition duration-500 hover:text-yellow transform hover:-translate-y-1 hover:scale-110 pt-4 text-base">
+                        <div className="text-Snow transition duration-500 hover:text-yellow transform hover:-translate-y-1 hover:scale-110 pt-4 text-base">
                             <a
                                 href={data?.url}
                                 target="_blank"
@@ -45,7 +45,7 @@ const PortfolioCard = ({ data }) => {
                             </a>
                         </div>
                     </div>
-                    <p className="text-xs text-gray-500 font-normal">
+                    <p className="text-xs text-LightGray font-normal">
                         {data?.projectDetail}
                     </p>
                     <div className="text-sm flex flex-wrap gap-3 py-2">

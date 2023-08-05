@@ -4,7 +4,7 @@
 
 body {
     /* transition: all; */
-    background-color: #161A23  !important;
+    background-color: #000  !important;
     /* padding: 0.8rem; */
     /* transition: width 5s ease-in .2s; */
     overflow: hidden;
@@ -43,13 +43,13 @@ body {
         
         /* Handle */
         ::-webkit-scrollbar-thumb {
-            background: yellow; 
-            border-radius: 10px;
+            background: #1fdf64; 
+            border-radius: 8px;
         }
         
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
-            background: yellow; 
+            background: #1fdf64; 
         }
     }
 
