@@ -5,14 +5,14 @@ import Recommendations from '../components/HomeComponents/Recommendations/Recomm
 import ClientReviews from '../components/HomeComponents/ClientReviews/ClientReviews';
 const home = () => {
     return (
-        <div className="PARENT -z-10">
+        <div className="-z-10">
             <Banner />
             <MyExpertise />
             <Recommendations />
             <ClientReviews />
             <Footer />
 
-        </div >
+        </div>
     )
 }
 
