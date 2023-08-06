@@ -20,6 +20,7 @@
     "react-icons": "^4.7.1",
     "react-query": "^3.39.3",
     "react-scroll": "^1.8.9",
+    "sass": "^1.64.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

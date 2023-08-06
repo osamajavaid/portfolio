@@ -5,7 +5,7 @@ import React from 'react'
 
 const NavItem = ({ NavIcon, NavText, NavRoute, setIsOpen }) => {
     const router = useRouter();
-    const className = router.asPath === `${NavRoute}` ? "rounded-xl text-DeepNightBlack bg-Green font-bold  tracking-widest" : '';
+    const className = router.asPath === `${NavRoute}` ? "rounded-xl !text-DeepNightBlack bg-Green font-bold tracking-widest" : '';
 
     return (
         <Link

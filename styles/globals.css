@@ -14,7 +14,37 @@ body {
 @layer utilities {
   @layer components {
     .transition {
-      @apply transition-all delay-75 duration-700;
+      @apply transition-all delay-200 duration-1000;
+    }
+    .card_stylings {
+      @apply bg-EveningBlack/95 rounded-xl hover:bg-gradient-to-br hover:from-Green/10 hover:to-indigo-600/5;
+    }
+    .button {
+      @apply bg-Green hover:bg-Green/60 transition rounded-xl text-MidNightBlack text-base font-medium  px-8 py-2;
+    }
+    .input_stylings {
+      @apply bg-DeepNightBlack text-SilverGray text-sm rounded-lg outline-none focus:ring-1 focus:ring-Green block w-full pl-10 p-2.5;
+    }
+
+    @font-face {
+      font-family: 'cascadia-normal';
+      src: url(/public/fonts/Cascadia.ttf);
+    }
+    @font-face {
+      font-family: 'circular-light';
+      src: url(/public/fonts/Circular-Light.otf);
+    }
+    @font-face {
+      font-family: 'circular-normal';
+      src: url(/public/fonts/Circular-Book.otf);
+    }
+    @font-face {
+      font-family: 'circular-medium';
+      src: url(/public/fonts/Circular-Medium.otf);
+    }
+    @font-face {
+      font-family: 'circular-bold';
+      src: url(/public/fonts/Circular-Bold.otf);
     }
   }
     @variants responsive {
@@ -84,3 +114,20 @@ body {
     background-color: transparent !important;
     height: 200px;
   }
+  .boxShodow:hover{
+    -webkit-box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
+    -moz-box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
+    box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
+
+  }
+
+
+.userIcon:focus-within #icon {
+  color: #1fdf64; /* Change the icon color when the input is focused */
+}
+.mailIcon:focus-within #icon {
+  color: #1fdf64; /* Change the icon color when the input is focused */
+}
+.textIcon:focus-within #icon {
+  color: #1fdf64; /* Change the icon color when the input is focused */
+}
