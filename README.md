@@ -1,14 +1,55 @@
-<h1>An Open Source Portfolio</h1>
-<h5>You are welcome to contribute</h5>
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/osamajavaid/portfolio)
+  ![GitHub stars](https://img.shields.io/github/stars/osamajavaid/portfolio?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/osamajavaid/portfolio?style=social)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/iosamajavaid?style=social)](https://twitter.com/intent/follow?screen_name=iosamajavaid)
 
-## Getting Started
+  <br />
+  <br />
+  
+  <img src="./readme-images/moj.png" />
 
-First, run the development server:
+  <h2 align="center">Muhammad Osama Javaid - Personal portfolio</h2>
+
+This website is fully responsive personal portfolio, <br />Responsive for all devices, built using Nextjs, TailwindCSS only.
+
+<a href="https://osamajavaid.vercel.app/"><strong>➥ Live Demo</strong></a>
+
+</div>
+
+<br />
+
+### Demo Screeshots
+
+![Jack Portfolio Desktop Demo](./readme-images/portfolio.png "Desktop Demo")
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+
+### Run Locally
+
+To run **portfolio** locally, run this command on your git bash:
+
+Linux and macOS:
 
 ```bash
-npm run dev
-# or
-yarn dev
+sudo git clone https://github.com/osamajavaid/portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Windows:
+
+```bash
+git clone https://github.com/osamajavaid/portfolio.git
+```
+
+### Contact
+
+If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/iosamajavaid).
+
+### License
+
+This project is **free to use** and does not contains any license.
