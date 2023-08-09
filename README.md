@@ -8,7 +8,7 @@
   <br />
   <br />
   
-  <img src="./readme-images/moj.png" />
+  <img src="./public/readme-images/moj.png" />
 
   <h2 align="center">Muhammad Osama Javaid - Personal portfolio</h2>
 
@@ -22,7 +22,7 @@ This website is fully responsive personal portfolio, <br />Responsive for all de
 
 ### Demo Screeshots
 
-![Jack Portfolio Desktop Demo](./readme-images/portfolio.png "Desktop Demo")
+![Osama Portfolio Desktop Demo](./public/readme-images/portfolio.png "Desktop Demo")
 
 ### Prerequisites
 
