@@ -1,11 +1,11 @@
-export const NAME = 'Haroon Hayat';
+export const NAME = 'Muhammad Osama Javaid';
 
-export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Technical Blogger`;
+export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Tech Blogger`;
 
 export const DETAILS = {
   Residence: 'Pakistan',
   City: 'Peshawar',
-  Age: '24',
+  Age: '23',
 };
 
 export const SKILLS = [
@@ -57,12 +57,12 @@ export const TECH_STACK = [
 ];
 
 export const CONTACTS = {
-  EMAIL: 'hayat_haroon@yahoo.com',
-  PHONE: '+92409341750',
+  EMAIL: 'iosamajavaid@gmail.com',
+  PHONE: '+923159591822',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/hayatharoon',
-  LINKEDIN: 'https://www.linkedin.com/in/hayatharoon/',
-  TWITTER: 'https://twitter.com/haron_hayat',
-  FACEBOOK: 'https://www.facebook.com/haroon.hayat.568',
+  GITHUB: 'https://github.com/osamajavaid',
+  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
+  TWITTER: 'https://twitter.com/iosamajavaid',
+  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
 };
