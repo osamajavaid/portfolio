@@ -48,7 +48,7 @@ git clone https://github.com/osamajavaid/portfolio.git
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/iosamajavaid).
+If you want to contact with me you can reach me at [X](https://www.x.com/iosamajavaid).
 
 ### License
 
