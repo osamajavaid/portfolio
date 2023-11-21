@@ -3,7 +3,6 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
-
 const MyExpertise = () => {
 
     const { isLoading, error, data } = useQuery('expertise', () =>

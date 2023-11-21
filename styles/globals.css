@@ -14,7 +14,7 @@ body {
 @layer utilities {
   @layer components {
     .transition {
-      @apply transition-all delay-200 duration-1000;
+      @apply transition-all delay-200 !duration-1000;
     }
     .card_stylings {
       @apply bg-EveningBlack/95 rounded-xl hover:bg-gradient-to-br hover:from-Green/10 hover:to-indigo-600/5;
@@ -115,9 +115,10 @@ body {
     height: 200px;
   }
   .boxShodow:hover{
-    -webkit-box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
+    box-shadow: rgba(31,223,100,1) 0px 2px 5px -1px, rgba(31,223,100,1) 0px 1px 3px -1px;
+    /* -webkit-box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
     -moz-box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
-    box-shadow: 0px 0px 11px -3px rgba(31,223,100,1);
+    box-shadow: 0px 0px 11px -3px rgba(31,223,100,1); */
 
   }
 

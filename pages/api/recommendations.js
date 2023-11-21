@@ -2,6 +2,14 @@
 const recommendationCard = [
   {
     id: 0,
+    name: 'Shahmir Minhas',
+    image: "images/shahmir.jfif",
+    designation: 'React JS | NEXT JS | Node | GraphQL',
+    view: "Hey everyone! I wanted to take a moment to recommend Osama Javaid for any React.js opportunities. I had the pleasure of working with him on multiple projects where he showcased a strong understanding of React.js and Next.js concepts and delivered high-quality code. He consistently demonstrated a willingness to learn and grow, and his enthusiasm for tackling new challenges was contagious. Osama is a reliable and dedicated team member who would be a great asset to any React.js team. Highly recommended! 👍! 🌟",
+    linkednURL: "https://www.linkedin.com/in/shahmir-minhas/"
+  },
+  {
+    id: 1,
     name: 'Sikandar Hayat',
     image: "images/sikandar.jpeg",
     designation: 'Data Scientist | Machine Learning Engineer | Python Developer',
@@ -9,7 +17,7 @@ const recommendationCard = [
     linkednURL: "https://www.linkedin.com/in/sikandar-hayat-381407179/"
   },
   {
-    id: 1,
+    id: 2,
     name: 'Nasir Khan',
     image: "images/nasir.jpg",
     designation: 'MERN | JavaScript | Tailwind | Sass | Bootstrap',
@@ -17,20 +25,12 @@ const recommendationCard = [
     linkednURL: "https://www.linkedin.com/in/nasirkhan22/"
   },
   {
-    id: 2,
+    id: 3,
     name: 'Muhammad Ullah',
     image: "images/muhammad.jpeg",
     designation: 'MERN Stack Developer at Productbox',
     view: "I highly recommend Osama Javed for web frontend development positions. Their expertise in ReactJS and Next.js, combined with their professionalism and dedication, make them an invaluable asset to any team.",
     linkednURL: "https://www.linkedin.com/in/muhammadullahafridi/"
-  },
-  {
-    id: 3,
-    name: 'Adam Murphy',
-    image: "images/adam.png",
-    designation: 'GSR MERL | Grad student at UC Santa Cruz',
-    view: "Osama is a great student who is an enthusiastic learner. He is always ready to learn new skills and is a very hard worker. His leadership skills are maturing and he is in the right direction for success.",
-    linkednURL: "#"
   },
 ]
 export default function handler(req, res) {
