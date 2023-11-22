@@ -87,7 +87,7 @@ const portfolio = [
         id: 0,
         projectName: "Tojjar",
         url: "https://tojjar.jmmtest.com/",
-        image: "projects/fateh.png",
+        image: "projects/tojjar.png",
         projectDetail: "Tojjar is ecommerce website,  where you can open your own store and sell products of different brands!",
         technologiesUsed: [
             {
