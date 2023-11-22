@@ -11,23 +11,23 @@ export const DETAILS = {
 export const SKILLS = [
   {
     title: 'MERN Stack Developer',
-    level: '85%',
-  },
-  {
-    title: 'React Developer',
-    level: '90%',
-  },
-  {
-    title: 'Desktop Application Developer',
     level: '75%',
   },
   {
+    title: 'React Developer',
+    level: '91%',
+  },
+  // {
+  //   title: 'Desktop Application Developer',
+  //   level: '75%',
+  // },
+  {
     title: 'Backend Developer',
-    level: '55%',
+    level: '54%',
   },
   {
     title: 'Technical Blogger',
-    level: '80%',
+    level: '83%',
   },
 ];
 
@@ -39,18 +39,17 @@ export const TECH_STACK = [
   'NodeJS',
   'Redux',
   'Zustand',
-  'ElectronJS',
   'CSS',
   'SCSS',
   'TailwindCSS',
   'Ant Design',
+  'Material UI',
+  'Next UI',
   'REST API',
   'MongoDB',
   'MySQL',
-  'Styled Components',
   'Git',
   'GitHub',
-  'BitBucket',
   'Jira',
   'Figma',
   'Adobe XD',

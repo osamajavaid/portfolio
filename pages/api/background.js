@@ -29,9 +29,9 @@ const background = [
             {
                 id: 1,
                 title: 'JMM Technologies',
-                role: 'Junior Frontend Developer',
+                role: 'Frontend Developer',
                 url: 'https://jmm.ltd/',
-                desc: 'As a junior frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
+                desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
                 year: '02/2023 - Present',
                 location: 'Peshawar, Pakistan'
             },
