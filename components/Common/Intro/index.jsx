@@ -37,12 +37,12 @@ const Intro = () => {
         <Link href={SOCIAL_LINKS.GITHUB} target='_blank' rel='noreferrer' className=''>
           <FaGithub />
         </Link>
-        <Link href={SOCIAL_LINKS.TWITTER} target='_blank' rel='noreferrer' className=''>
+        {/* <Link href={SOCIAL_LINKS.TWITTER} target='_blank' rel='noreferrer' className=''>
           <FaTwitter />
-        </Link>
-        <Link href={SOCIAL_LINKS.FACEBOOK} target='_blank' rel='noreferrer' className=''>
+        </Link> */}
+        {/* <Link href={SOCIAL_LINKS.FACEBOOK} target='_blank' rel='noreferrer' className=''>
           <FaFacebook />
-        </Link>
+        </Link> */}
         <Link href={SOCIAL_LINKS.LINKEDIN} target='_blank' rel='noreferrer' className=''>
           <FaLinkedin />
         </Link>

@@ -32,8 +32,8 @@ export const SKILLS = [
 ];
 
 export const TECH_STACK = [
-  'ReactJS',
   'JavaScript',
+  'ReactJS',
   'NextJS',
   'TypeScript',
   'NodeJS',
