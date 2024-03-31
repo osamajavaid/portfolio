@@ -28,7 +28,7 @@ const Contact = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Company:</span>
-                                <span className='text-LightGray md:text-sm'>CodeWorthy</span>
+                                <span className='text-LightGray md:text-sm'>visualsX</span>
                             </div>
                         </div>
                         <div className="card_stylings rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
@@ -38,7 +38,7 @@ const Contact = () => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Linkedin:</span>
-                                <span className='text-LightGray text-sm'>reachOsama</span>
+                                <span className='text-LightGray text-sm'>iosamajavaid</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Phone:</span>
