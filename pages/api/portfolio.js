@@ -1,6 +1,48 @@
 const portfolio = [
     {
         id: 0,
+        projectName: "JMM ERP",
+        url: "https://jmmerp.com/",
+        image: "projects/erp.png",
+        projectDetail: "Restructure your business with JMM ERP’s all-in-one cloud-based ERP. JMM ERP provides a robust, cost-effective online solution with state-of-the-art software to increase business value and enhance customer impact.",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: ".net"
+            },
+            {
+                tech: "GraphQL"
+            },
+            {
+                tech: "Ant Design"
+            },
+            {
+                tech: "TailwindCSS"
+            },
+        ]
+    },
+    {
+        id: 0,
+        projectName: "ABSCO",
+        url: "https://absco.sa/",
+        image: "projects/absco.png",
+        projectDetail: "ABSCO offer unparalleled business consulting solutions to meet client’s unique needs.",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Ant Design"
+            },
+            {
+                tech: "TailwindCSS"
+            },
+        ]
+    },
+    {
+        id: 0,
         projectName: "JMM Technologies",
         url: "https://jmm.ltd/",
         image: "projects/jmm.png",
@@ -13,6 +55,9 @@ const portfolio = [
                 tech: ".net"
             },
             {
+                tech: "REST API's"
+            },
+            {
                 tech: "Ant Design"
             },
             {
@@ -23,7 +68,7 @@ const portfolio = [
     {
         id: 0,
         projectName: "ALSN",
-        url: "https://elmsafeer.co/",
+        url: "https://alsn.app/",
         image: "projects/alsn.png",
         projectDetail: "ASLN drives digital transformation with certified document translation services. In an interconnected world where seamless communication is imperative, they are strategically positioned to cater to the needs of businesses, individuals, and organizations.",
         technologiesUsed: [
@@ -32,6 +77,9 @@ const portfolio = [
             },
             {
                 tech: ".net"
+            },
+            {
+                tech: "REST API's"
             },
             {
                 tech: "Ant Design"
@@ -44,7 +92,7 @@ const portfolio = [
     {
         id: 0,
         projectName: "FirmSanad",
-        url: "https://firmsanad.invogen.co/",
+        url: "/domain-expired",
         image: "projects/firmsanad.png",
         projectDetail: "Invest in Saudi Arabia, Streamline Your Business Setup Process in Saudi Arabia with FirmSanad Simplify the process of obtaining licenses and starting a business in Saudi Arabia with our streamlined platform.",
         technologiesUsed: [
@@ -53,6 +101,9 @@ const portfolio = [
             },
             {
                 tech: ".net"
+            },
+            {
+                tech: "REST API's"
             },
             {
                 tech: "Ant Design"
@@ -76,6 +127,9 @@ const portfolio = [
                 tech: ".net"
             },
             {
+                tech: "REST API's"
+            },
+            {
                 tech: "Ant Design"
             },
             {
@@ -86,7 +140,7 @@ const portfolio = [
     {
         id: 0,
         projectName: "Tojjar",
-        url: "https://tojjar.jmmtest.com/",
+        url: "/domain-expired",
         image: "projects/tojjar.png",
         projectDetail: "Tojjar is ecommerce website,  where you can open your own store and sell products of different brands!",
         technologiesUsed: [
@@ -95,6 +149,9 @@ const portfolio = [
             },
             {
                 tech: "Laravel"
+            },
+            {
+                tech: "REST API's"
             },
             {
                 tech: "Ant Design"
@@ -118,6 +175,9 @@ const portfolio = [
                 tech: "NodeJS"
             },
             {
+                tech: "REST API's"
+            },
+            {
                 tech: "MUI"
             },
             {
@@ -137,6 +197,9 @@ const portfolio = [
             },
             {
                 tech: "NodeJS"
+            },
+            {
+                tech: "REST API's"
             },
             {
                 tech: "Ant Design"
